@@ -3,7 +3,7 @@
 	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.20",	
 	"remoteUser": "root",
 
-	"postCreateCommand": "/bin/sh /workspaces/youthcongressnepal.org/.devcontainer/setup.sh",
+	"postCreateCommand": "/bin/sh /workspaces/nepal/.devcontainer/setup.sh",
 	"customizations": {
 		"vscode": {
 			"extensions": [

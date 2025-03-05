@@ -11,10 +11,10 @@ import (
 
 func Connection(){
 	// MinIO Configuration
-	endpoint := "94.136.185.141:7000" // Change to your MinIO server address
-	accessKey := "WpxEmNBd7N33ldrYtBai"                // Change to your MinIO access key
-	secretKey := "9MOBEv6jUGaWL0IjDG2lHmRJtVKvnccarzYjnSu2"             // Change to your MinIO secret key
-	bucketName := "youthcongressnepal"           // Change to your desired bucket name
+	endpoint := "94.136.185.141:7000" 								// Change to your MinIO server address
+	accessKey := "WpxEmNBd7N33ldrYtBai"                				// Change to your MinIO access key
+	secretKey := "9MOBEv6jUGaWL0IjDG2lHmRJtVKvnccarzYjnSu2"         // Change to your MinIO secret key
+	bucketName := "youthcongressnepal"           					// Change to your desired bucket name
 
 	// Initialize MinIO client
 	minioClient, err := minio.New(endpoint, &minio.Options{

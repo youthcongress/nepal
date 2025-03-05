@@ -35,6 +35,6 @@ func Connection() (*sql.DB, error) {
 		return nil, err
 	}
 
-	log.Println("✅ Connected to MySQL 8 successfully!")
+	log.Println("✅ Connected to MySQL database successfully!")
 	return db, nil
 }

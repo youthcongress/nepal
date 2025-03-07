@@ -10,6 +10,7 @@ import (
 func StartServer() {
 	// Initialize Fiber app with HTML template engine
 	engine := html.New("./template", ".html")
+	engine.Reload(true) // Auto-reload templates in development
 	app := fiber.New(fiber.Config{
 		Views: engine,
 	})

@@ -1,9 +1,56 @@
 <html>
-	<head>
 
-	</head>
+	{{template "head"}}
 
-	<body>
-		<p>Hello, this is a login page.</p>
+	<body class="stretched">
+
+		{{template "header"}}
+			
+			<section id="content">
+				<div class="content-wrap">
+					<div class="container clearfix">
+
+						<div class="accordion accordion-lg mx-auto mb-0 clearfix" style="max-width: 550px;">
+
+							<div class="accordion-header">
+								
+								<div class="accordion-title">
+									Login to your Account
+								</div>
+							</div>
+							<div class="accordion-content clearfix">
+								<form id="login-form" name="login-form" class="row mb-0" action="/login" method="post">
+									<div class="col-12 form-group">
+										<label for="login-form-username">Username:</label>
+										<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control">
+									</div>
+
+									<div class="col-12 form-group">
+										<label for="login-form-password">Password:</label>
+										<input type="password" id="login-form-password" name="login-form-password" value="" class="form-control">
+									</div>
+
+									<div class="col-12 form-group">
+										<button class="button button-3d button-black m-0" id="login-form-submit" name="login-form-submit" value="login">Login</button>
+										<a href="#" class="float-end">Forgot Password?</a>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>     
+
+		{{template "footer"}}
+
+		<div id="gotoTop" class="icon-angle-up"></div>
+	
+		<script src="static/js/jquery.js"></script>
+		<script src="static/js/plugins.min.js"></script>
+		<script src="static/js/functions.js"></script>
+		<script src="static/js/include-html.js"></script>
 	</body>
 </html>
+
+

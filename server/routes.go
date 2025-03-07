@@ -1,6 +1,9 @@
 package server
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+	"github.com/youthcongress/nepal/scripts/auth"
+)
 
 func Routes(app *fiber.App) {
 	pages := map[string]string{
@@ -17,4 +20,7 @@ func Routes(app *fiber.App) {
 			}
 		}(page))
 	}
+
+	// Register authentication routes from auth package
+	auth.Register(app)
 }
